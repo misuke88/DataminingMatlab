@@ -1,5 +1,5 @@
 
-
+clear all;
 close all, clear all, clc, format compact
 % number of samples of each class
 K=30;
@@ -28,3 +28,6 @@ a=[0 1]';
 b=[1 1]';
 c=[1 0]';
 d=[0 0]';
+
+[m, n]=size(A);
+
