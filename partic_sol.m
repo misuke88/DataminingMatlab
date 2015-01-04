@@ -2,6 +2,7 @@ function x = partic_sol(A, b)
 
     [m, n]=size(A);
     [R, pivcol]=rref([A b]);
+
     r= length(pivcol);
     
     if max(pivcol)== (n+1)
@@ -11,6 +12,8 @@ function x = partic_sol(A, b)
         d=R(:, n+1);
         x(pivcol)=d(1:r);
     end
+    print r;
+
 end
 
         
